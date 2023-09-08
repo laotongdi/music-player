@@ -1,0 +1,25 @@
+<scroll-view class="content-info" scroll-y="true">
+    <!-- 轮播图区域 -->
+    <swiper indicator-dots="true" autoplay circular>
+        <swiper-item wx:for="{{swiper_images}}" wx:key="index">
+            <image src="{{item.src}}" mode=""/>
+        </swiper-item>
+    </swiper>
+    <!-- 功能按钮区域 -->
+    <!-- <view class="content-info-portal">
+        <view wx:for="{{portals}}" wx:key="index">
+            <image src="{{item.src}}" mode=""/>
+            <text>{{item.text}}</text>
+        </view>
+    </view> -->
+    <!-- 推荐音乐 -->
+    <view class="content-info-list">
+        <view class="list-title">推荐音乐</view>
+        <view class="list-inner">
+            <view class="list-item" wx:for="{{lists}}" wx:key="index">
+                <image src="{{item.src}}" mode=""/>
+                <text>{{item.text}}</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>
